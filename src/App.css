@@ -1,0 +1,266 @@
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Josefin Sans Regular'), local('JosefinSans-Regular'), url(https://fonts.gstatic.com/s/josefinsans/v12/Qw3aZQNVED7rKGKxtqIqX5EUDXx4Vn8sig.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(https://fonts.gstatic.com/s/robotocondensed/v16/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7DQk6YvM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+html, body
+{ font-family: 'Roboto Condensed', sans-serif;
+  
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    color: #47525E;
+    background: linear-gradient(135deg, rgba(102,255,110,1) 0%, rgba(148,255,102,1) 29%, rgba(153,255,103,1) 32%, rgba(207,255,117,1) 62%, rgba(225,255,111,1) 76%, rgba(255,255,102,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66ff6e', endColorstr='#ffff66', GradientType=1 );
+}
+
+/**************************************************************
+    healthyweek.html
+    main
+**************************************************************/
+#root, #root > div
+{
+  height: 100%;
+
+}
+
+.main
+{
+    font-size: 1.2em;
+
+    margin: 0;
+    height: 100%;
+    display: flex; /* NEW, Opera 12.1, Firefox 20+ */
+    align-items: center;
+    
+}
+
+.main div
+{
+    text-align: center;
+    width: 100%;
+}
+
+.main ul
+{
+    display: inline-block;
+    text-align: left;
+    color: #707D91;
+    font-weight: bold;
+    margin-top: 0;      
+    background: #ffffff;
+    padding: 2.5%;
+    border-radius: 5px; 
+    -webkit-box-shadow:  0px 0px 5px 2px  rgba(143,143,143,0.75);
+    -moz-box-shadow:  0px 0px 5px 2px  rgba(143,143,143,0.75);
+    box-shadow:  0px 0px 5px 2px  rgba(143,143,143,0.75);  
+}
+
+.main h1
+{
+    font-family: "Josefin Sans";
+}
+
+.main h2
+{
+    font-weight: bolder;
+}
+
+.main button
+{
+    font-size: 1.5em;
+    background: #FF5128;
+    border: 2px solid #BF3D1E;
+    color: #ffffff;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    width: 15%;
+
+    -o-transition:.5s ease-in;
+    -ms-transition:.5s ease-in;
+    -moz-transition:.5s ease-in;
+    -webkit-transition:.5s ease-in;
+    /* ...and now for the proper property */
+    transition:.5s ease-in;
+
+    -o-transition:.2s ease-out;
+    -ms-transition:.2s ease-out;
+    -moz-transition:.2s ease-out;
+    -webkit-transition:.2s ease-out;
+    /* ...and now for the proper property */
+    transition:.2s ease-out;
+}
+
+.main button:hover
+{
+    background: #BF3D1E;
+}
+
+.main button:active
+{
+    background: #FF5128;
+    -webkit-box-shadow: inset 0px 0px 2px 2px #BF3D1E;
+    -moz-box-shadow: inset 0px 0px 2px 2px #BF3D1E;
+    box-shadow: inset 0px 0px 2px 2px #BF3D1E;
+    
+}
+
+/**************************************************************
+    healthyweek.html
+    text + img block 
+**************************************************************/
+.presentation_block
+{
+    width: 100%;
+    height: 50%;
+    font-size: 1.1em;
+}
+
+.text_wrapper
+{
+    width: 50%;
+    height: 100%;
+    display: inline-block; 
+}
+
+.text_box
+{
+    width: 70%;
+    margin: 0 auto;
+    height: 100%;   
+    display: flex; /* NEW, Opera 12.1, Firefox 20+ */
+
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
+.text_box h2, .text_box p
+{
+    margin: 0;
+
+}
+
+
+
+
+.img_box
+{
+    width: 50%;
+    height:100%;
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Opera 12.1, Firefox 20+ */
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+
+.left_box
+{
+    float: left;
+}
+
+.right_box
+{
+    float: right;
+}
+
+.presentation_block .img_box img
+{
+    object-fit: scale-down;
+width: 70%;
+    margin: 0 auto;
+    display: inline-block;
+    border-radius: 10%; 
+    -webkit-box-shadow:  0px 0px 5px 2px  rgba(143,143,143,0.75);
+    -moz-box-shadow:  0px 0px 5px 2px  rgba(143,143,143,0.75);
+    box-shadow:  0px 0px 5px 2px  rgba(143,143,143,0.75);  
+    
+
+}
+
+
+/**************************************************************
+    healthyweek.html
+    Eat healthier  div
+**************************************************************/
+.health
+{
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 9px 5px rgba(143,143,143,0.75);
+    -moz-box-shadow: 0px 0px 9px 5px rgba(143,143,143,0.75);
+    box-shadow: 0px 0px 9px 5px rgba(143,143,143,0.75);
+}
+
+.health .text_box div
+{
+    background: linear-gradient(135deg, rgba(102,255,110,1) 0%, rgba(148,255,102,1) 29%, rgba(153,255,103,1) 32%, rgba(207,255,117,1) 62%, rgba(225,255,111,1) 76%, rgba(255,255,102,1) 100%);
+    padding: 5%;
+    -webkit-box-shadow: inset 0px 0px 5px 2px  rgba(143,143,143,0.75);
+    -moz-box-shadow: inset 0px 0px 5px 2px  rgba(143,143,143,0.75);
+    box-shadow: inset 0px 0px 5px 2px  rgba(143,143,143,0.75);    
+    border-radius: 5px 5px 5px 5px;
+}
+
+/**************************************************************
+    healthyweek.html
+    Win time  div
+**************************************************************/
+.time
+{
+    text-align: right;
+}
+
+.time .text_box div
+{
+    background: #ffffff;
+    padding: 5%;
+    -webkit-box-shadow:  0px 0px 5px 2px  rgba(143,143,143,0.75);
+    -moz-box-shadow:  0px 0px 5px 2px  rgba(143,143,143,0.75);
+    box-shadow:  0px 0px 5px 2px  rgba(143,143,143,0.75);    
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+/**************************************************************
+    healthyweek.html
+    Save money div
+**************************************************************/
+.money
+{
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 0px 9px 5px rgba(143,143,143,0.75);
+    -moz-box-shadow: 0px 0px 9px 5px rgba(143,143,143,0.75);
+    box-shadow: 0px 0px 9px 5px rgba(143,143,143,0.75);
+}
+
+.money .text_box div
+{
+    background: linear-gradient(135deg, rgba(102,255,110,1) 0%, rgba(148,255,102,1) 29%, rgba(153,255,103,1) 32%, rgba(207,255,117,1) 62%, rgba(225,255,111,1) 76%, rgba(255,255,102,1) 100%);
+    padding: 5%;
+    -webkit-box-shadow: inset 0px 0px 5px 2px  rgba(143,143,143,0.75);
+    -moz-box-shadow: inset 0px 0px 5px 2px  rgba(143,143,143,0.75);
+    box-shadow: inset 0px 0px 5px 2px  rgba(143,143,143,0.75);    
+    border-radius: 5px 5px 5px 5px;
+}
